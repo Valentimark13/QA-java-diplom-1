@@ -6,10 +6,11 @@ import static org.junit.Assert.*;
 
 public class BunTest {
     private Bun bun;
+    private static int PRICE = 100;
 
     @Before
     public void setUp() {
-        bun = new Bun("White", 100);
+        bun = new Bun("White", PRICE);
     }
 
     @Test
@@ -19,6 +20,6 @@ public class BunTest {
 
     @Test
     public void shouldReturnCorrectBunPrice() {
-        assertEquals(100, bun.getPrice(), 0);
+        assertEquals(PRICE, bun.getPrice(), 0);
     }
 }
