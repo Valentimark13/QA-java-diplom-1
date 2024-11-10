@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class BunTest {
     private Bun bun;
-    private static int PRICE = 100;
+    private final static int PRICE = 100;
 
     @Before
     public void setUp() {
